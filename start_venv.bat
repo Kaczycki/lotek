@@ -1,0 +1,1 @@
+lotek\Scripts\Activate.bat
