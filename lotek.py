@@ -5,10 +5,11 @@ wyniki_losowania = set() #wylosowane liczby
 skreslone = set() #skreslone liczby
 trafione = set()
 liczba_losowan = 0
+cena=3
 
 def wylosuj_6 ():
     while len(wyniki_losowania) != 6: #losuje 6 niepowtarzalnych liczb od 1 do 49
-        los = random.randrange(1, 10)
+        los = random.randrange(1, 50)
         if los not in wyniki_losowania:
             wyniki_losowania.add(los)
     return (wyniki_losowania)
@@ -16,9 +17,9 @@ def wylosuj_6 ():
 
 while len(skreslone) != 6: #pyta o 6 niepowtarzalnych liczb 1 do 49
     current_input = int(input('skreśl swoją liczbę '))
-    if current_input not in skreslone:
+    if current_input not in skreslone and current_input > 0 and current_input < 20:
         skreslone.add(current_input)
-    print (skreslone)
+print (f'wytypowane liczby, to {skreslone}')
 
 trafione = wyniki_losowania.intersection(skreslone)
 
@@ -42,7 +43,10 @@ while len(trafione) < 6: #szuka wspólnych liczb (skreślonych i wylosowanych)
 print('______')
 print('wygrana!')
 print(wyniki_losowania)
-print(trafione, ' za ',liczba_losowan, ' losowaniem')
+print(f'trafione za ,{liczba_losowan}, losowaniem')
+print(f'wydane {cena*liczba_losowan} złotych, przy cenie {cena} za los. Warto było?')
+print(f'losowania w środy i soboty przyniosły wygraną po {liczba_losowan/2/52} latach')
+
 
 
 """ input:
