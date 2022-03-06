@@ -1,15 +1,28 @@
-(lotek) D:\Marek\python\projekty\lotek>pylint lotek.py    
+(lotek) D:\Marek\python\projekty\lotek>pylint lotek.py
 ************* Module lotek
-lotek.py:15:0: C0325: Unnecessary parens after 'return' keyword (superfluous-parens)
-lotek.py:71:0: C0304: Final newline missing (missing-final-newline)
-lotek.py:7:0: C0103: Constant name "liczba_losowan" doesn't conform to UPPER_CASE naming style (invalid-name)
-lotek.py:8:0: C0103: Constant name "cena" doesn't conform to UPPER_CASE naming style (invalid-name)
-lotek.py:10:0: C0116: Missing function or method docstring (missing-function-docstring)
-lotek.py:12:8: W0621: Redefining name 'los' from outer scope (line 31) (redefined-outer-name)
 lotek.py:20:7: R1716: Simplify chained comparison between the operands (chained-comparison)
-lotek.py:52:0: W0105: String statement has no effect (pointless-string-statement)
-lotek.py:57:0: W0105: String statement has no effect (pointless-string-statement)
-lotek.py:64:0: W0105: String statement has no effect (pointless-string-statement)
 
------------------------------------
-Your code has been rated at 7.14/10
+------------------------------------------------------------------
+Your code has been rated at 9.63/10 (previous run: 8.89/10, +0.74)
+
+
+""" input:
+    6 liczb
+    częstotliwość losowań
+    cena losu"""
+
+""" procedury:
+    przyjmij dane
+    losuj, dopóki wynik nie będzie równy danym wejściowym
+        w pętli licz losowania
+    policz cenę łączną
+    wyświetl liczbę losowań, cenę, czas potrzebny na wygraną"""
+
+""" dane:
+    zbiór kolejnych 49 liczb
+    liczby wytypowane
+    cena losu
+    częstotliwość losowań
+    łączna cena
+    łączna liczba losowań
+    """
