@@ -1,15 +1,96 @@
-(lotek) D:\Marek\python\projekty\lotek>pylint lotek.py    
+(lotek) D:\Marek\python\projekty\lotek>pylint lotek.py
 ************* Module lotek
-lotek.py:15:0: C0325: Unnecessary parens after 'return' keyword (superfluous-parens)
-lotek.py:71:0: C0304: Final newline missing (missing-final-newline)
-lotek.py:7:0: C0103: Constant name "liczba_losowan" doesn't conform to UPPER_CASE naming style (invalid-name)
-lotek.py:8:0: C0103: Constant name "cena" doesn't conform to UPPER_CASE naming style (invalid-name)
-lotek.py:10:0: C0116: Missing function or method docstring (missing-function-docstring)
-lotek.py:12:8: W0621: Redefining name 'los' from outer scope (line 31) (redefined-outer-name)
 lotek.py:20:7: R1716: Simplify chained comparison between the operands (chained-comparison)
-lotek.py:52:0: W0105: String statement has no effect (pointless-string-statement)
-lotek.py:57:0: W0105: String statement has no effect (pointless-string-statement)
-lotek.py:64:0: W0105: String statement has no effect (pointless-string-statement)
 
------------------------------------
-Your code has been rated at 7.14/10
+------------------------------------------------------------------
+Your code has been rated at 9.63/10 (previous run: 8.89/10, +0.74)
+
+
+""" input:
+    6 liczb
+    częstotliwość losowań
+    cena losu"""
+
+""" procedury:
+    przyjmij dane
+    losuj, dopóki wynik nie będzie równy danym wejściowym
+        w pętli licz losowania
+    policz cenę łączną
+    wyświetl liczbę losowań, cenę, czas potrzebny na wygraną"""
+
+""" dane:
+    zbiór kolejnych 49 liczb
+    liczby wytypowane
+    cena losu
+    częstotliwość losowań
+    łączna cena
+    łączna liczba losowań
+    """
+
+    PYTHON -M PYLINT NAZWAPLIKU.PY
+
+
+    
+(lotek) D:\Marek\python\projekty\lotek>PY LOTEK.PY
+skreśl swoją liczbę 4
+skreśl swoją liczbę 5
+skreśl swoją liczbę 6
+skreśl swoją liczbę 4
+skreśl swoją liczbę 5
+skreśl swoją liczbę 5
+skreśl swoją liczbę 9
+skreśl swoją liczbę 9
+skreśl swoją liczbę 12
+skreśl swoją liczbę 64
+skreśl swoją liczbę 64
+skreśl swoją liczbę 64
+skreśl swoją liczbę 64
+skreśl swoją liczbę 31684
+skreśl swoją liczbę casefvas
+Traceback (most recent call last):
+  File "D:\Marek\python\projekty\lotek\LOTEK.PY", line 19, in <module>
+    current_input = int(input('skreśl swoją liczbę '))
+ValueError: invalid literal for int() with base 10: 'casefvas'
+
+(lotek) D:\Marek\python\projekty\lotek>PY LOTEK.PY
+skreśl swoją liczbę 1 
+skreśl swoją liczbę 1
+skreśl swoją liczbę 1
+skreśl swoją liczbę 1
+skreśl swoją liczbę 1
+skreśl swoją liczbę 1
+skreśl swoją liczbę 1
+skreśl swoją liczbę 1
+skreśl swoją liczbę 1
+skreśl swoją liczbę 1
+skreśl swoją liczbę 1
+skreśl swoją liczbę 12
+skreśl swoją liczbę 13
+skreśl swoją liczbę 141
+skreśl swoją liczbę 13
+skreśl swoją liczbę 13
+skreśl swoją liczbę 13
+skreśl swoją liczbę 134
+skreśl swoją liczbę 436
+skreśl swoją liczbę 3463463
+skreśl swoją liczbę 34563
+skreśl swoją liczbę 346
+skreśl swoją liczbę 346
+skreśl swoją liczbę 754
+skreśl swoją liczbę 65
+skreśl swoją liczbę 12
+skreśl swoją liczbę 54
+skreśl swoją liczbę 34
+skreśl swoją liczbę 23
+skreśl swoją liczbę 65
+skreśl swoją liczbę 34
+skreśl swoją liczbę 23
+skreśl swoją liczbę 12
+skreśl swoją liczbę 3
+wytypowane liczby, to {1, 34, 3, 12, 13, 23}
+______
+wygrana!
+{1, 34, 3, 12, 13, 23}
+trafione za 23447866 losowaniem
+wydane 70343598 złotych, przy cenie 3 za los. Warto było?
+losowania w środy i soboty przyniosły wygraną po 225460.25 latach
