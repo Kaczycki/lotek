@@ -5,7 +5,6 @@ skreslone = set() #skreslone liczby
 trafione = set()
 LICZBA_LOSOWAN = 0
 CENA=3
-
 def wylosuj_6 ():
     """_summary_
     losuje 6 niepowtarzalnych liczb od 1 do 49
